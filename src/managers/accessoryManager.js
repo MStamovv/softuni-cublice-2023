@@ -1,6 +1,6 @@
 const Accessory = require(`../models/Accessory`);
 
-
+ exports.getAll = () => Accessory.find();
 
 
 

@@ -3,7 +3,7 @@ const accessoryManager = require(`../managers/accessoryManager`);
 
 
 router.get(`/create`, (req,res) =>{
-    res.render(`accesory/create`);
+    res.render(`accessory/create`);
 });
 
 router.post(`/create` , async (req , res)  =>{
