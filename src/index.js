@@ -14,15 +14,12 @@ const app = express();
 const port = 5000;
 
 
-
-
-
 expressConfig(app);
 handlebarsConfig(app);
 
 dbConnect()
-.then(() => console.log(`DB connect successfully`))
-.catch(err => {console.log(`DB error : `, err)});
+    .then(() => console.log(`DB connect successfully`))
+    .catch(err => { console.log(`DB error : `, err) });
 
 
 
