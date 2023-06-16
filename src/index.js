@@ -7,8 +7,6 @@ const routes = require(`./routes`);
 const dbConnect = require(`./config/dbConfig`);
 
 
-
-
 const app = express();
 
 const port = 5000;
