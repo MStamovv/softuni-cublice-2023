@@ -11,7 +11,6 @@ exports.login = async (username, password) => {
     // TODO find user
     const user = await User.findOne({ username });
 
-  
 
     if (!user) {
         throw new Error(`Cannot find usernameeeeee or password`);

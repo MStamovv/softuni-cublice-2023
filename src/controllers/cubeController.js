@@ -34,9 +34,6 @@ router.get(`/:cubeId/details`, async (req, res) => {
     }
 
     const isOwner = cube.owner?.toString() === (req.user)?._id;
-    console.log(cube.owner?.toString())
-    console.log(req.user)
-    console.log(isOwner);
     res.render(`cube/details`, { cube, isOwner });
 
 });
@@ -50,7 +47,7 @@ router.get(`/:cubeId/attach-accessory`, async (req, res) => {
     res.render(`accessory/attach`, { cube, accessories, hasAccessories });
 });
 
-router.post(`/:cubeId/attach-accexssory`, async (req, res) => {
+router.post(`/:cubeId/attach-accessory`, async (req, res) => {
     const { accessory: accessoryId } = req.body;
     const cubeId = req.params.cubeId;
 
